@@ -21,7 +21,7 @@ composer require loewenstark/instagram2
  
 3, Logout from the admin panel and then login again.
 
-4, Change the config in System -> Configuration -> Loewenstark Instagram 2 -> Configuration
+4, Change the config in Stores -> Configuration -> Loewenstark Instagram 2 -> Configuration
 
 5, Add container with ID in DOM (ID Name in Setup!)
 
@@ -44,9 +44,7 @@ Example frontend after styling:
 
 Uninstallation
 --------------
-1, Remove all extension files from your Magento installation OR
-
-2, Remove via Composer and clear the caches
+1, Remove via Composer and clear the caches
 
 ```
 composer remove loewenstark/instagram2
