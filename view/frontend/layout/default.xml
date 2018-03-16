@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <head>
+        <link src="Loewenstark_Instagram2::js/instafeed.js"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Loewenstark\Instagram2\Block\Instagram" template="Loewenstark_Instagram2::instafeed.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

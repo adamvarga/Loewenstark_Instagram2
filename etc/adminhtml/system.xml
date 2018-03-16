@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ls_instagram2" translate="label" sortOrder="10">
+            <label>Loewenstark Instagram 2</label>
+        </tab>
+        <section id="ls_instagram2_setup" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>Configuration</label>
+            <tab>ls_instagram2</tab>
+            <resource>Loewenstark_Instagram2::ls_instagram2_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Configuration</label>
+                <comment>
+                    <![CDATA[Modul based on <a href="http://instafeedjs.com" target='_blank'><strong>instafeedjs</strong></a>]]></comment>
+                <field id="enable" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="user_id" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>User Id</label>
+                    <comment>
+                        <![CDATA[Generate <a href="https://smashballoon.com/instagram-feed/find-instagram-user-id/" target='_blank'>here</a>]]></comment>
+                </field>
+                <field id="access_token" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Access Token</label>
+                    <comment>
+                        <![CDATA[Generate <a href="http://instagram.pixelunion.net/" target='_blank'>here</a>]]></comment>
+                </field>
+                <field id="container_name" translate="label" type="text" sortOrder="50" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Container Box</label>
+                    <comment>
+                        <![CDATA[Which container contains the feed, this can be one id name, for example: <br> instafeed ]]></comment>
+                </field>
+            </group>
+            <group id="display_setup" translate="label" type="text" sortOrder="10" showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Display Setup</label>
+                <field id="image_format" translate="label" type="select"
+                       sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Image format</label>
+                    <comment><![CDATA[Size of the images to get]]></comment>
+                    <source_model>Loewenstark\Instagram2\Model\Config\Source\Format</source_model>
+                </field>
+                <field id="image_sort" translate="label" type="select"
+                       sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Image sort</label>
+                    <comment><![CDATA[Sort the images in a set order]]></comment>
+                    <source_model>Loewenstark\Instagram2\Model\Config\Source\Sort</source_model>
+                </field>
+                <field id="limit" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Limit</label>
+                    <comment><![CDATA[Maximum number of Images to add]]></comment>
+                </field>
+                <field id="likes" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Likes</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Display likes]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
