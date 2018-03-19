@@ -34,9 +34,9 @@ For example:
 ```
 <div id="instagram"></div>
 ```
+- Position in homepage / categorypage / productpage
 
 8, You can style the template individually with css / direct im template instafeed.phtml by variable 'template'
-
 
 Example setup:
 
