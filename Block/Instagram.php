@@ -15,6 +15,7 @@ class Instagram extends \Magento\Framework\View\Element\Template
     const ACCESS_TOKEN = 'ls_instagram2_setup/general/access_token';
     const USER_ID = 'ls_instagram2_setup/general/user_id';
     const CONTAINER_NAME = 'ls_instagram2_setup/general/container_name';
+    const CONTAINER_POSITION = 'ls_instagram2_setup/general/container_position';
     const IMAGE_FORMAT = 'ls_instagram2_setup/display_setup/image_format';
     const IMAGE_SORT = 'ls_instagram2_setup/display_setup/image_sort';
     const LIMIT = 'ls_instagram2_setup/display_setup/limit';
@@ -72,6 +73,15 @@ class Instagram extends \Magento\Framework\View\Element\Template
     public function getContainerBox()
     {
         return $this->_scopeConfig->getValue(self::CONTAINER_NAME, self::STORESCOPE);
+    }
+    /*
+     * Get container position page for feed
+     */
+
+    public function getContainerPosition()
+    {
+        $container_position = $this->_scopeConfig->getValue(self::CONTAINER_POSITION, self::STORESCOPE);
+        return $container_position;
     }
 
     /*
