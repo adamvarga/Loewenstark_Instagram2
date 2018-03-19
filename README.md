@@ -6,11 +6,15 @@ Instagram Feed with configuration for Magento 2.x
 -------------------------------
 Installation Instructions
 -------------------------
-1, Clone the extension via GitHub, and require with 
+1, Clone the extension as a composer repository via GitHub 
+
+2, Add the <strong>loewenstark/instagram2</strong> composer package to your project. 
+
+3, Require with 
 ```
 composer require loewenstark/instagram2
 ```
-2, Clear the cache and upgrade the modul environment with
+4, Clear the cache and upgrade the modul environment with
  
  ```
  rm -rf var/cache/*
@@ -19,11 +23,11 @@ composer require loewenstark/instagram2
  php bin/magento setup:upgrade
  ```
  
-3, Logout from the admin panel and then login again.
+5, Logout from the admin panel and then login again.
 
-4, Change the config in Stores -> Configuration -> Loewenstark Instagram 2 -> Configuration
+6, Change the config in System -> Configuration -> Loewenstark Instagram 2 -> Configuration
 
-5, Add container with ID in DOM (ID Name in Setup!)
+7, Add container with ID in DOM (ID Name in Setup!)
 
 For example:
 
@@ -31,7 +35,7 @@ For example:
 <div id="instagram"></div>
 ```
 
-6, You can style the template individually with css / direct im template instafeed.phtml by variable 'template'
+8, You can style the template individually with css / direct im template instafeed.phtml by variable 'template'
 
 
 Example setup:
@@ -44,11 +48,14 @@ Example frontend after styling:
 
 Uninstallation
 --------------
-1, Remove via Composer and clear the caches
+1, Remove all extension files from your Magento installation OR
+
+2, Remove via Composer and clear the caches
 
 ```
 composer remove loewenstark/instagram2
 ```
+
 
 Support
 -------
