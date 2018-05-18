@@ -1,5 +1,6 @@
 Loewenstark_Instagram for Magento 2.x
 =====================
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/adamvarga28)
 
 Instagram Feed with configuration for Magento 2.x
 
